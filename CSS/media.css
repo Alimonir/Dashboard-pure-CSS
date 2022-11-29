@@ -246,7 +246,7 @@ ul {
 /* end sidebar */
 /* start  content*/
 .page .content {
-    width: calc(80%);
+    width: 85%;
     overflow: hidden;
 }
 
