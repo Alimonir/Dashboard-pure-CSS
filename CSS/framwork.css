@@ -1,0 +1,22 @@
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.s-flex {
+    justify-content: space-between;
+}
+
+.c-align {
+    text-align: center;
+}
+
+/* width */
+.width {
+    width: 100%;
+}
+
+/* padding */
+.p-left {
+    padding-left: 15px;
+}

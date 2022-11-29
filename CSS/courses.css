@@ -1,0 +1,99 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --page-color: #f1f5f9;
+    --section-color: #eee;
+    --font-phone: 13px;
+}
+
+.c-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .c-container {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* start profile */
+.courses {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    /* overflow: hidden; */
+}
+
+.courses .image-holder {
+    position: relative;
+}
+
+.courses .image-holder .ground {
+    max-width: 100%;
+}
+
+.courses .image-holder .avatr {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border: 1px solid white;
+}
+
+.courses .text {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.courses .text h4 {
+    margin: 10px 0;
+}
+
+.courses .text p {
+    color: var(--grey-color);
+    margin: 10px 0;
+}
+
+.courses .text .blue {
+    position: absolute;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    transform: translateX(140%);
+    bottom: -14px;
+}
+
+.courses .footer {
+    padding: 25px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .footer span {
+    color: var(--grey-color);
+}

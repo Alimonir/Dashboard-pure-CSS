@@ -1,0 +1,254 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --page-color: #f1f5f9;
+    --section-color: #eee;
+    --font-phone: 13px;
+}
+
+.p-container {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* start profile */
+.profile {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.profile .image {
+    text-align: center;
+    padding: 0 40px 0 30px;
+    border-right: 1px solid #ccc;
+}
+
+@media (max-width:767px) {
+    .profile .image {
+        border-right: none;
+    }
+}
+
+.profile .image p {
+    margin: 10px 0;
+}
+
+.profile .image .gray {
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--grey-color)
+}
+
+.profile .raw {
+    background-color: #ccc;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.profile .raw .blue {
+    background-color: var(--blue-alt-color);
+    height: 5px;
+    width: 80px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.profile .icons {
+    margin: 10px 0;
+}
+
+.profile .icons i {
+    color: gold;
+}
+
+.profile .text {
+    padding: 0 0 0 10px;
+    flex: 1;
+}
+
+.profile .text .box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .profile .text .box {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.profile .text .box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.profile .text .box .info {
+    width: 100%;
+    font-weight: normal;
+}
+
+.profile .text .box h4 {
+    margin: 0;
+}
+
+.profile .text .box p {
+    min-width: 225px;
+    padding: 10px 0 0;
+}
+
+.profile .text .box .buttom {
+    min-width: 100px;
+    padding: 10px 0 0;
+}
+
+
+.p-toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.p-toggle-switch {
+    background-color: #ccc;
+    width: 100px;
+    height: 20px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+    top: -10px;
+}
+
+.p-toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f057";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    background-color: white;
+    color: #ccc;
+    border-radius: 50%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 1px;
+}
+
+.p-toggle-checkbox:checked+.p-toggle-switch {
+    background-color: var(--blue-color);
+}
+
+.p-toggle-checkbox:checked+.p-toggle-switch::before {
+    content: "\f058";
+    left: 81px;
+    color: var(--blue-color);
+}
+
+/* end profile */
+/* start my skills */
+.skills {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+}
+
+@media (max-width:767px) {
+    .skills {
+        width: 100%;
+    }
+}
+
+.skills .box {
+    padding: 20px 0 20px 0;
+    text-align: start;
+}
+
+.skills .box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.skills .box span {
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+/* end my skills */
+/* Activities */
+.activities {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+}
+
+@media (max-width:767px) {
+    .activities {
+        width: 100%;
+    }
+}
+
+.activities .box {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.activities .box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.activities .box img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.activities .box .text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+.activities .box .text span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.activities .box .text .gray {
+    color: var(--grey-color);
+}
+
+.activities .box .text .info {
+    text-align: end;
+}
+
+/* End Activities */
